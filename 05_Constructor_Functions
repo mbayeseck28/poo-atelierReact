@@ -1,0 +1,24 @@
+function usersateur(noms, email, ...amis) {
+  this.noms = noms;
+  this.email = email;
+  this.amis = amis;
+  this.login = function () {
+    console.log(`${email} est connecté(e)`);
+  };
+  this.logout = function () {
+    console.log(`${email} est déconnecté(e)`);
+  };
+}
+
+const user = utilisateur('Mbaye Seck', 'mbaye@gmail.com', 'Aliou', 'Fanta');
+const user2 = utilisateur('Awa Diop', 'awa@gmail.com', 'Fanta', 'Abou');
+
+const user3 = new Utilisateur('Aliou Fall', 'aliou@gmail.com', 'Anthia');
+
+console.log(user);
+console.log(user2);
+console.log(user3);
+
+//Accés aux methodes
+user.login();
+user.logout();
